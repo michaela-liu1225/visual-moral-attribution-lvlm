@@ -1,0 +1,53 @@
+{
+  "schema_version": "prompt-protocol-manifest-v1",
+  "protocol_id": "visual-cue-prompt-pilot-v1",
+  "frozen_at_utc": "2026-09-05T22:12:34.009109+00:00",
+  "protocol_sha256": "010ecf86752795948c65f735a12ca5ef23a0b79726346feeeec6b2e8a0d97fd9",
+  "schedule_seed": 20260905,
+  "config_sha256": "14b0f55fc7fbd0b60ff7ab8f4bd80b4edc5d59ad0e23fd01585369b2da5883b5",
+  "evaluation_manifest_sha256": "b0df04e619c332a72d33e5061a92e225ef3b9a537c9dcb40ee78e063f56dfcdd",
+  "cue_discovery_manifest_sha256": "5deb76a0e3b011b54da607e1eac26c3c351ba76a03da29d825780aa53213a2d0",
+  "schedule_sha256": "4abacadab7776f19f410667a58dab254f25527fef3a254f29b2f95a6ed48d37c",
+  "runner_sha256": "eab58d9732ca7dcee0957c0d95eee3f574364929999ae755f0282dfeadb129c1",
+  "evaluation_image_sha256": {
+    "1-1": "16c8b6ef21bd106f6229643ab02fee435a73563485160c64d5eac9e5c19d2f44",
+    "9-2": "62142986ca8108d3f29fee7e17e6af5650e1c7bdfdc9a95870bf910fa30abc0d",
+    "7-2": "f05fbbbb98ff0f700f0dd0c5f9cb1d846a5f597327839a92b88e1fcef6ffbd63",
+    "37-3": "368cf7b7ef47e0933e9b60541ae321361571d2dbc8bd6b7deb0dc657f9a54e21",
+    "15-3": "6f28dbc5170e67ac96e4ab80c38be2299d567d14bc2e675cad060a9c0181f35c",
+    "g-1": "943338cbf3221f686e7f8eab88ffc3c7ca097f6fc19aae82b4af59fa203117af",
+    "5-1": "589bad34aefce12c54edbac3b2719b2364fea38829d953c2dd548960607a1ff1",
+    "3-1": "6d4b129168c70ae11059197ac5a1d1784bd9673b751937d98539e1347809284a",
+    "o-2": "21aa96fa08ee7513fe40f6f363813482ecc5d47bee6902d10ca1e7f04b65a45c",
+    "g-2": "81625f82d1617b53b838379a4be27cbc819155fbabf5b2dc8260886504801ba6",
+    "2-1": "4c390cab45d7793acde1917cc6c343bfdece7f98faca8ae93220ba7b58bad292",
+    "25-2": "f2c8b7b650119d1d77c11d0589ceb662f0e41da70262e74f89249661c27fd484",
+    "34-4": "54b77dd8508b18cc320701e2e5d4c650978915a6fa05d172f0e86ddea6abe0a1",
+    "o-1": "465ce5e16a46ae2345602e9171dd9d71e3f2541db1587e0b00b60a3ad76e919e",
+    "16-2": "b19fe338347260d6f82e12bf5b43634b2f0503089cdbb715f9dfe13c1d5639b4",
+    "35-3": "10205cc5ff7b04e752488d2961e48affc5f0a07ee8b10d130097b4f6c44be1db"
+  },
+  "prompts": [
+    {
+      "condition": "p0",
+      "version": "p0-baseline-v2",
+      "role": "retained baseline",
+      "filename": "p0_p0-baseline-v2.txt",
+      "sha256": "1c1a1676abde21bda6ea8cf6eef5a6ca2bb99ecef928005f0fe5aed4769d0fa1"
+    },
+    {
+      "condition": "p1",
+      "version": "p1-structured-control-v1-2026-09-05",
+      "role": "structured-decision control",
+      "filename": "p1_p1-structured-control-v1-2026-09-05.txt",
+      "sha256": "b9621814e5a2bb839e6f399c5bf42940989a14efca909b15427ab68e3ae9432d"
+    },
+    {
+      "condition": "p2",
+      "version": "p2-blind-nonoverlap-cues-v1-2026-09-05",
+      "role": "visual-cue-guided intervention",
+      "filename": "p2_p2-blind-nonoverlap-cues-v1-2026-09-05.txt",
+      "sha256": "482dce5b0ed5faf3ec20bdf32b51d0eb2212e901d18dde12a59c1f710160df8d"
+    }
+  ]
+}

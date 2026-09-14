@@ -1,0 +1,65 @@
+{
+  "schema_version": "prompt-experiment-v1",
+  "protocol_id": "visual-cue-prompt-pilot-v1",
+  "protocol_locked_date": "2026-09-05",
+  "status": "exploratory_pilot",
+  "primary_model_key": "gpt56",
+  "primary_comparison": ["p0", "p2"],
+  "mechanism_control": "p1",
+  "repeats": 3,
+  "schedule_seed": 20260905,
+  "temperature": 0,
+  "output_schema": {
+    "fields": ["label", "confidence", "brief_reason"],
+    "additional_properties": false
+  },
+  "model_specs": {
+    "gpt56": {
+      "provider": "OpenAI",
+      "requested_model": "gpt-5.6",
+      "endpoint": "responses",
+      "reasoning": {"effort": "none"},
+      "image_detail": "high"
+    },
+    "gpt4o": {
+      "provider": "OpenAI",
+      "requested_model": "gpt-4o",
+      "endpoint": "responses",
+      "reasoning": {},
+      "image_detail": "high"
+    },
+    "qwen36": {
+      "provider": "Alibaba Cloud Model Studio",
+      "requested_model": "qwen3.6-flash-2026-04-16",
+      "endpoint": "openai_compatible_chat_completions",
+      "reasoning": {"enable_thinking": false},
+      "image_detail": "provider_default"
+    }
+  },
+  "primary_metric": "image_macro_mean_participant_endorsement",
+  "primary_estimand": "Across the 16 evaluation images, the mean of each image's P2 minus P0 expected participant-endorsement rate, where each condition's rate first averages its three model repeats.",
+  "primary_hypothesis": "For GPT-5.6, P2 yields higher image-macro expected participant endorsement than P0.",
+  "primary_inference": {
+    "test": "exact_two_sided_sign_flip_permutation_over_image_deltas",
+    "confidence_interval": "95_percentile_bootstrap_resampling_images",
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260905,
+    "alpha": 0.05,
+    "interpretation": "Report effect size and uncertainty. Treat a positive estimate with a confidence interval wholly above zero and p < 0.05 as evidence of improvement within this pilot; otherwise report the result as worse or inconclusive rather than proving equivalence."
+  },
+  "secondary_metrics": [
+    "modal_label_plurality_set_match",
+    "wrong_to_right_and_right_to_wrong",
+    "within_image_label_stability",
+    "model_reported_confidence"
+  ],
+  "inference_unit": "image",
+  "repeat_policy": "Three repeats estimate each image-condition response distribution and are averaged within image; they are never treated as independent inferential observations.",
+  "modal_tie_break": "Use the fixed taxonomy order in VALID_LABELS only for deterministic summaries, and flag every tie.",
+  "mixed_none_policy": "Primary analysis retains responses as recorded. Sensitivity analysis removes only the None endorsement from the three responses that selected None together with at least one moral label; denominators do not change.",
+  "evaluation_images": 16,
+  "participant_records": 56,
+  "image_participant_responses": 280,
+  "prompt_derivation_policy": "P2 uses only the five non-overlapping cue-discovery families listed in manifests/cue_discovery_cases.csv. Human annotations and the three overlapping cue families 1-1, 7-2, and 16-2 are excluded from prompt derivation.",
+  "interpretation_limit": "Results estimate correspondence within a purposively selected 16-image pilot and do not establish population-level accuracy or out-of-sample generalisation."
+}
