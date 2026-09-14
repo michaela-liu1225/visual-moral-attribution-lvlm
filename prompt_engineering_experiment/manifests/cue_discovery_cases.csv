@@ -1,0 +1,7 @@
+base_image_id,base_filename,variant_transcript_id,variant_filename,intervention,allowed_for_prompt_derivation
+16-1,16-1.jpg,16-1upset.jpg,upset.jpg,distressed-expression edit,yes
+34-1,34-1.jpg,34-1text.jpg,34-1text.jpg,text ablation,yes
+g-7,g-7.jpg,g-7women.jpg,g-7women.jpg,participant-region occlusion,yes
+12-1,12-1.jpg,12-1hand.jpg,12-1hand.jpg,ritual-gesture occlusion,yes
+32-2,32-2.jpg,32-2bg.jpg,32-2bg.jpg,background replacement,yes
+
