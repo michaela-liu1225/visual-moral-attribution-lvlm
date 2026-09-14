@@ -1,0 +1,183 @@
+gpt4o
+Image: test16-1.jpg
+Label: Care
+Confidence: 85
+Reason: The image shows two people embracing each other closely, indicating an emotional bond or support, which suggests the moral concern of Care. The gesture signifies an expression of compassion or intimacy, emphasizing well-being and connection.
+Image: test16-2.jpg
+Label: Harm
+Confidence: 90
+Reason: The image shows one person restraining another in a manner that suggests potential aggression or violence, indicating a primary concern with physical harm or threat.
+
+Image: 16-1upset.jpg
+Label: Care
+Confidence: 90
+Reason: The image shows two people embracing closely. One appears emotional, suggesting a need for comfort. The primary concern is providing emotional support, indicative of Care.
+Image: 16-2happy.jpg
+Label: None of these / Not clearly moral in nature
+Confidence: 85
+Reason: The image shows two people smiling and engaging in a playful manner. There is no clear evidence of a primary moral concern such as harm, care, fairness, or others from the specified categories.
+
+Image: 1-1face.jpg
+Label: Care
+Confidence: 90
+Reason: The image shows an adult holding a child in a supportive manner. The body language suggests protection or nurturing, indicating concern for the child's well-being.
+
+Image: 1-1arm.jpg
+Label: Care
+Confidence: 95
+Reason: The image shows a close, joyful interaction between an adult and a child. The adult appears to be nurturing and attentive to the child, conveying a strong sense of care and affection.
+
+Image: 17-2body.jpg
+Label: Respect / Authority
+Confidence: 90
+Reason: The image shows individuals bowing, which is a visible expression of respect. The context suggests a formal setting where social roles or hierarchical interactions are likely present, supporting the classification of Respect / Authority.
+
+Image: 34-1text.jpg
+Label: Respect / Authority
+Confidence: 85
+Reason: The image shows a person being monitored by a camera in a controlled environment with surveillance equipment visible. This suggests authority and control, highlighting respect or enforcement of rules and boundaries. The presence of multiple cameras emphasizes this interpretation. An alternate category could be "Subversion" if the person appears subjugated or the setting seems oppressive, but the scene more strongly conveys authority.
+
+Image: g-7women.jpg
+Label: None of these / Not clearly moral in nature
+Confidence: 85
+Reason: The image shows a community gathering with people seated at tables in discussion. There is no explicit visual evidence indicating a clear moral concern related to care, harm, fairness, or any other category. The focus appears to be on social interaction and dialogue, which is not inherently moral in nature.
+
+Image: 12-1hand.jpg
+Label: Sanctity
+Confidence: 85
+Reason: The image shows a group of people engaged in an activity that appears to be related to worship or spiritual focus. The central figure is bowing their head, which may suggest reverence or spiritual reflection. The cross in the background reinforces the context of a religious or sacred setting.
+
+Image: 32-2bg.jpg
+Label: Care
+Confidence: 85
+Reason: The woman appears to be in a potentially vulnerable state given her worn clothing and contemplative expression, suggesting a need for support or concern for her well-being. This evokes a sense of care.
+
+gpt5.6
+Image: test16-1.jpg
+Label: Care
+Confidence: 78
+Reason: Two people are visibly engaged in a close, mutual embrace and kiss, conveying affection, tenderness, and concern for one another. The scene could also be viewed as simply romantic rather than explicitly moral, but Care best fits the visible supportive intimacy.
+Image: test16-2.jpg
+Label: Harm
+Confidence: 82
+Reason: One person is visibly restraining the other from behind with an arm wrapped tightly around the neck, while the restrained person grips the arm, suggesting a chokehold and physical danger. It could be staged or athletic practice, but the dominant visible action conveys potential bodily harm.
+
+Image: 16-1upset.jpg
+Label: Care
+Confidence: 95
+Reason: Two people are tightly embracing, with one cradling the other's head and both showing strong emotion, visibly conveying comfort and mutual support. Loyalty is possible, but no specific group allegiance is shown, so Care is the clearer primary concern.
+Image: 16-2happy.jpg
+Label: Loyalty
+Confidence: 72
+Reason: Two smiling men are shown in a close, affectionate embrace, visibly conveying companionship and solidarity. Care is also plausible because of the warmth of the interaction, but there is no visible helping or vulnerability; the emphasis is more on their bond. Their exact relationship is not established, which creates some uncertainty.
+
+Image: 1-1face.jpg
+Label: Care
+Confidence: 82
+Reason: An adult is visibly supporting and cradling a young child, conveying protection and attention to the child’s vulnerability. The child’s reclined posture could indicate comfort, play, or a need for assistance, but no clear injury or violence is visible, so Harm is not the primary concern.
+
+Image: 1-1arm.jpg
+Label: Care
+Confidence: 88
+Reason: An adult is visibly holding and looking warmly at a laughing child, conveying affection, nurturing, and supportive connection. The only uncertainty is that this is an ordinary joyful interaction rather than an explicit act of aid or protection.
+
+Image: 17-2body.jpg
+Label: Respect / Authority
+Confidence: 92
+Reason: Two people are visibly bowing toward one another in a formal meeting setting, conveying mutual respect and adherence to established social or professional etiquette. It is uncertain whether any authority relationship is involved, but respect and tradition are clearer than any other moral concern.
+
+Image: 34-1text.jpg
+Label: Respect / Authority
+Confidence: 62
+Reason: Prominent surveillance cameras, monitoring screens, reinforced glass, and a control panel visually emphasize institutional oversight and control. The scene is ambiguous because no rule enforcement or misconduct is shown; it could simply depict ordinary security rather than a clear moral issue.
+
+Image: g-7women.jpg
+Label: Loyalty
+Confidence: 66
+Reason: The visible “Community Gathering” and “Unity & Dialogue” signs, along with people socializing in groups, emphasize community solidarity and connection. The scene could also be interpreted as an ordinary social event with no strong moral content, so the classification is moderately uncertain.
+
+Image: 12-1hand.jpg
+Label: Sanctity
+Confidence: 85
+Reason: The bowed head, closed eyes, and raised hands across the gathered crowd visibly suggest collective prayer or spiritual reverence. The lack of explicit religious symbols creates some uncertainty, but the scene is more consistent with sacred observance than with a nonmoral gathering.
+
+Image: 32-2bg.jpg
+Label: None of these / Not clearly moral in nature
+Confidence: 68
+Reason: The image shows a woman standing alone with a serious expression, a backpack, and somewhat stained clothing, but no clear act of harm, assistance, injustice, or other moral situation is visible. Care is somewhat plausible if her appearance is meant to suggest hardship or vulnerability, but that cannot be confidently inferred from the scene alone.
+
+qwen
+
+======================================================================
+[1/2] Processing: test16-1.jpg
+Image: test16-1.jpg
+Label: Care
+Confidence: 95
+Reason: The image visually depicts two individuals engaged in a close embrace, with one person holding the other's head and neck. This physical contact is a strong visual indicator of support, comfort, or nurturing, which aligns directly with the category of Care. There is no visible evidence of harm, unfairness, or violation of dignity.
+
+======================================================================
+[2/2] Processing: test16-2.jpg
+Image: test16-2.jpg
+Label: Harm
+Confidence: 85
+Reason: The image visually depicts a physical confrontation where one individual is restraining another from behind with an arm around the neck (a chokehold) and hands placed over the other's chest. This posture strongly implies physical violence, aggression, or abuse, which aligns directly with the 'Harm' category involving injury or cruelty. While it could be interpreted as a martial arts demonstration (which might suggest 'Care' regarding safety training), the aggressive nature of the hold and the lack of visible protective gear make the depiction of harm/violence the primary visual concern.
+
+[1/2] Processing: 16-1happy.jpg
+FAILED: 16-1upset.jpg
+Error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input image data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': '[redacted]'}
+
+======================================================================
+[2/2] Processing: 16-2happy.jpg
+Image: 16-2happy.jpg
+Label: Care
+Confidence: 85
+Reason: The image depicts two men engaging in a playful physical interaction where one is hugging the other from behind. Both individuals are smiling broadly and appear to be enjoying the moment, conveying a sense of camaraderie, affection, and mutual well-being. This aligns with the category of 'Care,' which includes support and positive social bonding. While the physical contact could theoretically be interpreted as 'Harm' (violence) or 'Cheating' (a prank), the explicit visual evidence of joy and lack of distress makes these interpretations incorrect. The primary moral theme is the positive connection between the subjects.
+
+======================================================================
+[1/1] Processing: 1-1face.jpg
+Image: 1-1face.jpg
+Label: Care
+Confidence: 95
+Reason: The image visually depicts an adult holding a child in a protective embrace. The physical closeness and the act of supporting the child's body convey a clear concern for the child's well-being, safety, and need for support, which aligns directly with the category of Care.
+
+======================================================================
+[1/1] Processing: 1-1arm.jpg
+Image: 1-1arm.jpg
+Label: Care
+Confidence: 95
+Reason: The image visually depicts a tender interaction between an adult and a child. The adult is smiling down at the child with a gentle expression, while the child is laughing joyfully while being held or supported. This scene clearly conveys nurturing, support, and positive emotional connection, which aligns directly with the category of Care.
+
+======================================================================
+[1/1] Processing: 17-2body.jpg
+Image: 17-2body.jpg
+Label: Respect / Authority
+Confidence: 85
+Reason: The image depicts two individuals bowing to one another in a formal setting. Bowing is a culturally established gesture of respect, greeting, or apology that acknowledges social roles and hierarchy. The visible action directly aligns with the category of respecting authority, social roles, and traditions. While it could be interpreted as a general sign of politeness (which might fall under 'None'), the specific act of bowing is most strongly associated with social deference and respect within a structured context.
+
+======================================================================
+[1/1] Processing: 34-1text.jpg
+Image: 34-1text.jpg
+Label: Harm
+Confidence: 75
+Reason: The image depicts a person isolated in a sterile, cage-like room under constant surveillance by multiple cameras. The visual language of confinement, isolation, and total observation strongly implies psychological suffering, abuse, or the infliction of harm through deprivation of liberty and dignity. While 'Degradation' is plausible due to the objectification inherent in being watched like an specimen, the primary emphasis on the restrictive environment points more directly to the harm caused by confinement.
+
+======================================================================
+[1/1] Processing: g-7women.jpg
+Image: g-7women.jpg
+Label: None of these / Not clearly moral in nature
+Confidence: 95
+Reason: The image depicts a standard community gathering or conference with people socializing and eating. While the setting implies positive values like community and dialogue (visible on banners), the visual scene itself does not convey any specific moral action, conflict, vulnerability, suffering, or injustice. It is a neutral depiction of a social event without evidence supporting categories like Care, Fairness, or Harm.
+
+======================================================================
+[1/1] Processing: 12-1hand.jpg
+Image: 12-1hand.jpg
+Label: None of these / Not clearly moral in nature
+Confidence: 85
+Reason: The image depicts a group of people standing together in what appears to be a dimly lit venue with purple lighting. While their postures (heads bowed) might suggest prayer or deep contemplation, the context is ambiguous; it could also be a concert, a conference, or a performance. There are no visible signs of suffering, unfair treatment, violation of rights, or specific moral actions like care or harm. Inferring a religious or spiritual context would require assumptions not strictly supported by the visual evidence.
+
+======================================================================
+[1/1] Processing: 32-2bg.jpg
+Image: 32-2bg.jpg
+Label: Harm
+Confidence: 75
+Reason: The primary visual evidence is the subject's physical state: her clothing and bag are visibly stained with dirt or grime, and she appears disheveled. This suggests she has recently experienced a negative event, injury, or struggle (physical suffering/harm). While 'Care' is plausible because her condition implies a need for help, the image focuses on the visible aftermath of the adverse event itself rather than an act of compassion. Other categories like 'Degradation' are less fitting as there is no clear evidence of humiliation or intentional mistreatment by another party.
