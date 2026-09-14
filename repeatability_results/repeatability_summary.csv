@@ -1,0 +1,28 @@
+﻿scope,comparison,statistic,resolution,n,agreement_rate,kappa,notes
+within_model,gpt-4o,mean_pairwise_run_agreement,exact_label,32,0.916667,0.896468,unanimous=28/32
+within_model,gpt-4o,mean_pairwise_run_agreement,foundation,32,0.9375,0.915419,unanimous=29/32
+within_model,gpt-4o,mean_pairwise_run_agreement,moral_vs_none,32,0.979167,0.94958,unanimous=31/32
+within_model,gpt-5.6,mean_pairwise_run_agreement,exact_label,32,0.854167,0.771039,unanimous=25/32
+within_model,gpt-5.6,mean_pairwise_run_agreement,foundation,32,0.875,0.792731,unanimous=26/32
+within_model,gpt-5.6,mean_pairwise_run_agreement,moral_vs_none,32,0.895833,0.78836,unanimous=27/32
+within_model,qwen3.6-flash-2026-04-16,mean_pairwise_run_agreement,exact_label,32,0.958333,0.946414,unanimous=30/32
+within_model,qwen3.6-flash-2026-04-16,mean_pairwise_run_agreement,foundation,32,0.958333,0.939981,unanimous=30/32
+within_model,qwen3.6-flash-2026-04-16,mean_pairwise_run_agreement,moral_vs_none,32,0.979167,0.954459,unanimous=31/32
+inter_model,gpt-4o | gpt-5.6,matched_runs,exact_label,96,0.59375,0.469087,
+inter_model,gpt-4o | gpt-5.6,unique_modal_labels,exact_label,32,0.59375,0.473418,
+inter_model,gpt-4o | gpt-5.6,matched_runs,foundation,96,0.59375,0.434014,
+inter_model,gpt-4o | gpt-5.6,unique_modal_labels,foundation,32,0.59375,0.436314,
+inter_model,gpt-4o | gpt-5.6,matched_runs,moral_vs_none,96,0.666667,0.366337,
+inter_model,gpt-4o | gpt-5.6,unique_modal_labels,moral_vs_none,32,0.6875,0.391635,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,matched_runs,exact_label,96,0.729167,0.661192,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,unique_modal_labels,exact_label,32,0.71875,0.649208,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,matched_runs,foundation,96,0.770833,0.682263,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,unique_modal_labels,foundation,32,0.75,0.652646,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,matched_runs,moral_vs_none,96,0.833333,0.620553,
+inter_model,gpt-4o | qwen3.6-flash-2026-04-16,unique_modal_labels,moral_vs_none,32,0.8125,0.565611,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,matched_runs,exact_label,96,0.6875,0.575347,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,unique_modal_labels,exact_label,32,0.6875,0.58279,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,matched_runs,foundation,96,0.71875,0.58713,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,unique_modal_labels,foundation,32,0.71875,0.593794,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,matched_runs,moral_vs_none,96,0.75,0.517588,
+inter_model,gpt-5.6 | qwen3.6-flash-2026-04-16,unique_modal_labels,moral_vs_none,32,0.75,0.509579,
