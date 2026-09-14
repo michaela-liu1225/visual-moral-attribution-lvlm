@@ -1,0 +1,222 @@
+\chapter{Related Work}
+\label{chap:related_work}
+
+A moral label attached to an image appears to name something in the scene, but
+it compresses two judgements: whether the scene is morally significant and
+which concern best explains that significance. This chapter follows that
+problem from moral categories, through visual ambiguity and existing benchmark
+designs, to the comparison made in this dissertation.
+
+
+\section{Moral Categories as a Comparative Vocabulary}
+\label{sec:moral_foundations}
+
+Moral judgement can concern whether an act is wrong, a norm has been violated,
+or an agent deserves blame \cite{malle2021moral}. An image can also be morally
+meaningful without showing wrongdoing, for example when it depicts care,
+commitment, or respect.
+
+Moral Foundations Theory (MFT) organises such concerns into five widely used
+virtue--vice pairs: Care/Harm, Fairness/Cheating, Loyalty/Betrayal,
+Authority/Subversion, and Sanctity/Degradation
+\cite{graham2009liberals,graham2011mapping}. They describe different reasons a
+situation might matter morally, not positions on one scale from good to bad.
+
+This vocabulary supports comparison, but does not make its labels objective
+properties of images. The MFQ-2, for example, is a validated six-foundation
+self-report measure, not an image-classification instrument
+\cite{zakharin2023mfq2}. Relationships among foundations also vary across
+cultures \cite{atari2023weird}. A picture may therefore support several
+readings, or too little evidence for any of them.
+
+The present study adapts the five pairs into ten image categories and adds
+\textit{None of these / Not clearly moral in nature}. MFT is thus a shared
+comparative language, not a complete or culturally neutral account of visual
+morality. The model must still prioritise one label when several are plausible.
+
+
+\section{Why Images Create a Two-Stage Moral Problem}
+\label{sec:visual_moral_inference}
+
+Many computational studies of morality begin with text. ETHICS, Moral Stories,
+and Delphi can state actions, intentions, norms, and consequences directly
+\cite{hendrycks2021aligning,emelin2021moral,jiang2025delphi}. A single image
+often leaves that context unstated.
+
+An image may show an outcome without establishing what preceded it, what the
+people intended, how they are related, or what follows. Visual commonsense
+research distinguishes recognising visible objects and actions from inferring
+goals and social relations \cite{zellers2019recognition}. The distinction
+becomes morally important when judgement depends on intention or responsibility
+\cite{malle2021moral}. Visible distress, for example, does not by itself reveal
+whether a scene concerns Harm, Care, Betrayal, or none of these.
+
+\textbf{A model must first decide whether the evidence crosses a
+moral-relevance boundary, and only then which moral frame should dominate.}
+Two models can agree at the first stage but disagree at the second because they
+give different weight to expression, posture, context, or an inferred story.
+
+The Socio-Moral Image Database (SMID) preserves this complexity through
+continuous ratings. Its 2,941 photographs received more than 820,000
+judgements from 2,716 participants on affect, moral wrongness, and foundation
+relevance \cite{crone2018smid}. Using SMID, Zhu et al. found that visual
+representations added predictive information not fully captured by generated
+captions \cite{zhu2025visual}. In that setting, a description was not a
+complete substitute for the image.
+
+These studies use richer targets than the forced choice examined here. That
+choice removes graded relevance and competing labels, but also reveals where a
+model draws the moral boundary and which reading it prioritises.
+
+
+\section{How Multimodal Studies Handle Ambiguity}
+\label{sec:multimodal_moral_evaluation}
+
+Recent multimodal studies respond to ambiguous moral evidence through
+different design choices. MM-MoralBench combines synthetic visual contexts
+with dialogue and evaluates judgement, classification, and response tasks
+across six foundations \cite{yan2026mmmoralbench}. The controlled scenarios
+and dialogue provide information that an unaccompanied image may omit.
+MORALISE instead uses 2,481 expert-verified real-world image--text pairs and a
+13-topic taxonomy grounded in Turiel's Domain Theory
+\cite{lin2026moralise}. It separates detecting a moral violation from
+identifying the norm involved. This distinction closely resembles the
+two-stage problem described above, although MORALISE begins with annotated
+moral-violation material and uses a different taxonomy.
+
+Other work preserves ambiguity by changing the response rather than adding
+context. Rezapour et al. asked people and language models to construct moral
+stories from shared visual cues, finding differences in both moral emphasis
+and narrative form \cite{rezapour2025tales}. Their open-ended format allows a
+scene to develop into several possible stories. MM-SCALE takes a different
+route, using five-point acceptability ratings, grounded reasoning labels, and
+listwise preferences \cite{park2026mmscale}. It therefore offers a richer
+target than a binary or single-label judgement.
+
+Table~\ref{tab:literature_design_comparison} brings the central design contrast
+together. These resources differ not only in scale, but in what uncertainty
+their recorded targets preserve. The present study has no corpus-wide,
+independently validated reference structure. Its purpose is consequently not
+to reproduce benchmark accuracy, but to examine what happens when deployed
+models face the same restricted label space on a mixed set that also permits
+\textit{None}.
+
+\begin{table}[!htbp]
+    \centering
+    \caption{How closely related visual moral studies represent context and
+    judgement.}
+    \label{tab:literature_design_comparison}
+    \footnotesize
+    \begin{spacing}{1.0}
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.12}
+    \begin{tabularx}{\textwidth}{@{}L{0.18\textwidth}YYY@{}}
+        \toprule
+        Resource & Visual material & Recorded target & Main design choice \\
+        \midrule
+        SMID \cite{crone2018smid} & 2,941 photographs & Graded human ratings
+        of wrongness, affect, and foundation relevance & Retains degrees of
+        relevance and observer variation \\
+        MM-MoralBench \cite{yan2026mmmoralbench} & Synthetic visual contexts
+        with dialogue & Foundation-based judgement, classification, and
+        response tasks & Adds controlled moral context \\
+        MORALISE \cite{lin2026moralise} & 2,481 curated image--text pairs &
+        Moral judgement and 13-topic norm attribution & Separates detecting a
+        violation from identifying its norm \\
+        MM-SCALE \cite{park2026mmscale} & Image--scenario pairs & Five-point
+        acceptability and listwise preferences & Replaces a single target with
+        graded, grounded comparisons \\
+        Present study & 127 mixed-source images & One model label and
+        confidence; participant, repeat, and edit subsets & Audits a shared
+        forced-choice task without treating one label as correct \\
+        \bottomrule
+    \end{tabularx}
+    \end{spacing}
+\end{table}
+
+\FloatBarrier
+
+Multimodal safety benchmarks likewise show that images matter when models
+handle harmful inputs \cite{liu2024mmsafetybench,ying2024safebench}. Their
+outcome is safe response behaviour, however, not the moral categorisation of
+an ambiguous scene; the two alignment questions are related but distinct.
+
+
+\section{Agreement, Human Variation, and Reported Confidence}
+\label{sec:model_uncertainty}
+
+Once an image becomes a label, the next question is what agreement with it
+means. Text-based studies show that elicitation can shape moral outputs.
+Abdulhai et al. examined moral-foundation profiles across conversational and
+targeted prompt contexts \cite{abdulhai2024foundations}; Liu et al. compared
+moral choices, ranked principles, and choice firmness across models and Chinese
+university students \cite{liu2024pluralistic}. These studies treat an output
+as a response to an instrument, not direct access to fixed values. Alternative
+prompts should likewise be robustness checks, not a search for a model's
+``true'' morality.
+
+The same caution applies to confidence. In text-based knowledge and reasoning
+tasks, its elicitation affects how well it corresponds to performance
+\cite{xiong2024uncertainty}. A requested confidence score is therefore not
+automatically a calibrated probability. It may show how strongly a model
+presents its answer without showing how widely others share that answer.
+
+Human agreement is not a simple substitute for model agreement. The importance
+assigned to moral foundations differs across people, groups, and cultural
+contexts \cite{graham2009liberals,graham2011mapping,qian2024cultural,
+atari2023weird}. VLM image understanding also varies across cultural contexts
+\cite{yadav2025beyond,ananthram2024perspective}. This literature does not
+explain a particular case here, but cautions against treating one participant
+sample as a universal human standard.
+
+Subjective-annotation research further shows that majority voting can erase
+systematic differences between annotators \cite{davani2022dealing}. Response
+distributions may therefore be evidence rather than noise
+\cite{uma2021disagreement}. A plurality label cannot show whether most people
+agreed or several readings received substantial support.
+
+\textbf{Agreement consequently has several meanings.} Models can agree with
+one another, a model can reproduce itself, or participants can include its
+label. Confidence is another quantity again. None validates the others.
+
+
+\section{Visual-Cue Sensitivity and the Present Study}
+\label{sec:research_positioning}
+
+Aggregate agreement does not explain why a particular label was selected.
+Comparing an image with an edited version can make possible cue dependence more
+visible. Liu et al. tested VLM moral judgements under textual and visual
+perturbations and found that robustness varied by perturbation, moral domain,
+and model \cite{liu2026moralbackbone}. Their work shows the value of evaluating
+whether a judgement survives a changed input. It also sets a boundary on what
+small edit studies can establish: if an edit changes several visible
+properties at once, a changed label can motivate a hypothesis about relevant
+cues but cannot isolate a causal mechanism.
+
+Taken together, these studies leave open the combined question examined here:
+how several deployed LVLM configurations use the same single-label MFT
+vocabulary on a fixed corpus containing both morally suggestive and ambiguous
+images, and how their outputs differ across label resolution, repeated runs,
+participant multi-label responses, and matched image edits.
+
+The four research questions follow that sequence. RQ1 asks where each model
+draws the boundary between a moral category and \textit{None}, and which frames
+appear in its retained outputs. RQ2 asks whether apparent agreement survives
+when the labels are examined at finer resolution and when classifications are
+repeated. RQ3 keeps the distribution of participant selections visible, so a
+model's correspondence with a plurality can be distinguished from broad human
+agreement. RQ4 then uses selected edits to identify cases in which changing the
+visible evidence is followed by a different label or confidence score. A
+supplementary prompt experiment tests whether the participant-correspondence
+pattern is robust to alternative evidence-checking instructions; it is not a
+fifth research question.
+
+Measurement and benchmark research stresses that an evaluation result inherits
+the assumptions and scope of the task that produced it
+\cite{jacobs2021measurement,raji2021benchmark}. This dissertation therefore
+does not turn model consensus, participant plurality, researcher indexing, or
+confidence into an accuracy target. \textbf{Its contribution is to show what a
+simple one-label comparison can reveal---the moral boundary, the preferred
+frame, stability, participant correspondence, and sensitivity to edited
+evidence---and what that comparison would hide if these were reduced to one
+score.}

@@ -1,0 +1,107 @@
+% Public-access build: the Figures directory contains labelled placeholders
+% because the image corpus and institutional artwork are not redistributed.
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[a4paper,total={6.25in,8.25in}]{geometry}
+\input{Packages.tex}
+\usepackage{multicol}
+
+\hypersetup{
+    pdftitle = {Moral Alignment in Multimodal AI:
+Evaluating Large Vision--Language Models’ Capacity to
+Interpret the Moral Meaning of Images},
+    pdfauthor = {Yuxin Liu},
+    pdfstartview = FitH,
+    colorlinks = true,
+    anchorcolor = black,
+    citecolor = black,
+    urlcolor = blue!55!black,
+    filecolor = black,
+    linkcolor = black,
+    plainpages = false
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{University College London}
+\rfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+Moral Alignment in Multimodal AI:
+Evaluating Large Vision--Language Models’ Capacity to
+Interpret the Moral Meaning of Images
+}
+
+\author{
+    \Large Student Name: Yuxin Liu\\
+    \Large Public access copy\\[1cm]
+    \Large Supervisor: Canhui Liu
+}
+
+\date{2026}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+
+\maketitle
+
+% ------------------------------------------------
+% Front Matter
+% ------------------------------------------------
+
+\clearpage
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+
+\begin{center}
+\textbf{\large Abstract}
+\end{center}
+\begin{spacing}{1.15}
+\input{0 Abstract}
+\end{spacing}
+
+\tableofcontents
+
+\listoffigures
+\listoftables
+
+
+% ------------------------------------------------
+% Main Matter
+% ------------------------------------------------
+
+\clearpage
+\pagenumbering{arabic}
+
+\input{1 Introduction}
+
+\input{2 Related Work}
+
+\input{3 Methodology}
+
+\input{4 Results and Discussion}
+
+\input{5 Conclusion}
+
+% ------------------------------------------------
+% References
+% ------------------------------------------------
+
+\renewcommand{\bibname}{References}
+\bibliographystyle{ieeetr}
+\begin{spacing}{1.0}
+\footnotesize
+\bibliography{references}
+\end{spacing}
+
+% ------------------------------------------------
+% Appendices
+% ------------------------------------------------
+
+\appendix
+\input{Appendix}
+
+\end{document}

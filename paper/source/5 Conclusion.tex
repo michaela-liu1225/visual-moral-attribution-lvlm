@@ -1,0 +1,160 @@
+\chapter{Conclusion and Future Work}
+\label{Chap6}
+
+\section{Conclusion}
+
+This dissertation began with a simple expectation: if several
+vision--language models received the same image, moral taxonomy, and
+instructions, their agreement---especially confident agreement---might indicate
+a shared moral reading. The findings complicate that expectation. Rather than
+asking which model produced the correct label, the study examined how moral
+interpretations differed across three model configurations, participant
+responses, repeated runs, and selected changes to visual context.
+
+RQ1 and RQ2 distinguish two aspects of visual moral attribution: whether an
+image was classified as morally relevant and, if so, how its moral meaning was
+framed. The configurations crossed the first boundary at
+different rates on the fixed corpus, but the uneven stimulus set means that
+these output margins cannot establish general model preferences. Agreement
+also increased when the ten moral labels were collapsed into moral content
+versus \textit{None}. That increase did not resolve the original
+interpretations; it removed distinctions among them. Some disagreements
+contrasted vulnerability with suffering within Care/Harm, whereas others
+placed the same scene in different foundations. \textbf{The models agreed more
+readily that a scene had moral significance than on what that significance
+meant.}
+
+Repeated runs revealed a second distinction. Within the later repeat block,
+each configuration usually reproduced its own labels more often than it matched
+another model. Yet this short-run consistency did not always reproduce the
+earlier primary output. The contrast was clearest for GPT-5.6, although the two
+blocks differed in date and settings and cannot support a general temporal
+ranking. \textbf{A model can therefore be repeatable within one evaluation
+window without preserving the same interpretation across evaluation windows.}
+
+RQ3 supplied the most important human comparison. Participants did not form a
+single answer key: on eight of the 16 survey images, even the most-endorsed
+category was selected by fewer than half of those who saw the image. Within
+this purposively selected subset, GPT-5.6 nevertheless showed the highest
+descriptive correspondence with participant selections on all four summary
+measures. This was a limited advantage. All three models returned the same
+label on ten images, so the ordering was produced entirely by the remaining six
+model-disagreement cases. Model consensus and reported confidence also failed
+to guarantee strong participant support. Thus, GPT-5.6 corresponded most
+closely with these participants on these images; the result does not establish
+that it is generally closest to human moral judgement.
+
+RQ4 then showed how a moral reading could change. In the selected cases,
+obscuring a potentially relevant cue often preserved the original label,
+although confidence sometimes fell. By contrast, replacing distressed expressions with positive ones or changing
+the background context could reorganise the classification and expose
+different alternative readings across models. This
+pattern points to relationships among visible cues rather than a single
+cue-to-label trigger, but the small, imperfectly isolated edits cannot identify
+a causal visual mechanism. The supplementary prompt check produced an equally
+narrow result: the structured and cue-guided prompts caused only small, mixed
+changes. GPT-5.6 retained the highest descriptive correspondence under all
+three conditions, but cue guidance did not consistently improve participant
+correspondence.
+
+Taken together, the results support one central conclusion: \textbf{the models
+did not simply retrieve a moral category already contained in an image; they
+constructed a moral reading by selecting which visible evidence and contextual
+inferences mattered.} Agreement about moral presence could conceal disagreement
+about meaning, local repeatability could conceal weaker continuity, and model
+consensus could conceal a different distribution of participant
+interpretations. Agreement, participant correspondence, repetition, and
+confidence are therefore distinct signals, not one measure.
+
+\section{Scope and Limitations}
+
+These conclusions apply to the recorded configurations and study materials.
+The 127-image corpus was constructed rather than sampled from a defined image
+population, and its researcher-assigned indexing categories were highly uneven
+and not independently validated. Of the 127 corpus images, 76 were generated
+using Google Gemini, so generator-specific stylistic regularities or visual
+artefacts may have influenced the model outputs; the study did not separately
+estimate any such influence. The primary analysis retained one output for
+each model--image pair. The repeat subset was selected from initial agreement
+patterns, and the primary and repeat blocks used non-identical settings.
+Consequently, neither component estimates general model preferences or
+population-level stability.
+
+The participant comparison used 16 purposively selected images, 56
+self-selected respondents, and no demographic variables. Participants could
+select several categories under shorter definitions, whereas each model had to
+return one label under more detailed instructions. Participant endorsement was
+therefore a measure of correspondence under this survey design, not accuracy
+under matched conditions. The image edits were few and did not hold every
+non-target feature constant, while the prompt check reused the same small
+survey subset. These limitations do not change the observed descriptive
+patterns, but they restrict how far those patterns can be generalised. The
+absence of a clear prompt improvement also does not show that a better prompt
+could not be developed.
+
+
+\section{Future Work}
+\label{sec:future_work}
+
+The first priority is a larger and more balanced image corpus. A planned
+diagnostic set should provide adequate coverage of moral and non-moral scenes,
+all five foundations, both virtue and vice poles, and deliberately ambiguous
+cases. A separate naturalistic sample should then test whether findings from
+the balanced set remain visible when category frequencies are not controlled.
+Keeping development and evaluation images separate would make it easier to
+distinguish a recurring model pattern from a feature of the particular images
+used to discover it.
+
+More human annotation is equally important. Future studies should obtain more
+independent judgements for every image and collect short reasons or ranked
+interpretations alongside category selections. Relevant demographic variables
+would allow planned analyses of cultural variation
+\cite{atari2023weird,yadav2025beyond}. Models and participants should also
+receive more closely matched definitions and response options, including a
+clear distinction between no moral content and insufficient visible evidence.
+The aim would not be to manufacture one universal human label, but to estimate
+which readings are widely shared, contested, or associated with particular
+groups and interpretations.
+
+The image-edit findings provide concrete hypotheses for both controlled visual
+tests and prompt engineering. Future counterfactual pairs should be created
+before inference, change one intended cue at a time, and include matched control
+edits. Repeated evaluation of both images would help separate sensitivity to
+the intended cue from ordinary between-call variation
+\cite{liu2026moralbackbone}. Prompt rules could then be developed on a larger,
+balanced development set by examining recurring differences between visible
+evidence and inferred background stories. The prompt should be frozen before
+testing on separate held-out images. The present P1 and P2 conditions did not
+produce a consistent improvement; a larger dataset would not guarantee a
+better prompt, but it would provide a stronger basis for testing whether the
+cue-related hypotheses generalise. Prompt engineering should therefore remain
+a robustness check rather than a post-hoc search for preferred answers.
+
+Finally, future evaluations should continue to separate short-run
+repeatability from longer-term continuity. More repetitions, broader image
+coverage, and date-stamped reruns of the same frozen requests would help locate
+variation associated with the image, prompt, model configuration, or
+evaluation window. Retaining provider settings, returned model identifiers,
+failures, and raw outputs would make later changes in hosted systems easier to
+detect \cite{chen2024changing}.
+
+Together, these extensions would move the evaluation beyond asking whether
+models return the same label. The more informative question is which evidence
+makes a visual scene morally meaningful to different models and different
+people, and under what conditions that interpretation remains stable.
+
+\section{Implications for the Sustainable Development Goals}
+\label{sec:sdg_implications}
+
+The findings have their clearest methodological relevance to SDG~16,
+particularly Targets~16.6 and~16.7. Where LVLMs might inform institutional
+judgements, evaluations intended to support accountable, transparent, and
+inclusive use should keep interpretive disagreement visible.
+\textbf{Model consensus or model-reported confidence should therefore not be
+treated as evidence of a uniquely correct moral interpretation.}
+
+The connection to SDG~10 is secondary and indirect. Variation among models and
+participants raises the question of whose interpretations are represented when
+a system assigns a single label, but the study does not demonstrate unequal
+outcomes or effects on any group. These implications concern evaluation
+practice; the dissertation does not measure progress towards either SDG.

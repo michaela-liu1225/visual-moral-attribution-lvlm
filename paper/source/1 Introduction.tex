@@ -1,0 +1,195 @@
+\chapter{Introduction}
+\label{Chap1}
+
+\section{Background}
+
+Large vision--language models (LVLMs) process images together with
+natural-language instructions. They can classify and describe images as well
+as reason about depicted actions, relationships, and social situations
+\cite{zellers2019recognition}. When an image has social or normative
+significance, however, identifying its visible objects is only the first step.
+The model must also determine what is happening and which moral concern, if
+any, is supported by the scene. This makes visual moral classification
+particularly challenging when the relevant context is incomplete or
+ambiguous.
+
+Two main challenges arise from this task. First, some of the information needed
+for a moral judgement may not be visible. An image may show an action without
+revealing the actor's intention, the relationship between the people involved,
+the events preceding the scene, or its consequences. For example, physical
+contact could represent assistance, restraint, aggression, or an accidental
+interaction. These interpretations could lead to different moral categories,
+even though the visible action is the same. Visual information nevertheless
+contains evidence relevant to human moral judgement
+\cite{zhu2025visual}. The challenge is therefore to use that evidence without
+presenting an inferred context as something directly observed in the image.
+
+Second, different models may resolve the same ambiguity differently. LVLMs are
+developed using different training data, architectures, and post-training
+objectives. They may therefore emphasise different visual cues, make different
+assumptions about missing context, or apply different thresholds when assigning
+a moral category. Previous comparisons have shown that moral-foundation
+profiles and moral choices can vary across language models and elicitation
+conditions \cite{abdulhai2024foundations,liu2024pluralistic}. The same image
+and classification instructions may consequently produce different moral
+judgements across models.
+
+A common category framework is required to compare these judgements. Moral
+Foundations Theory (MFT) distinguishes five paired dimensions of moral concern:
+Care/Harm, Fairness/Cheating, Loyalty/Betrayal, Authority/Subversion, and
+Sanctity/Degradation
+\cite{graham2009liberals,graham2011mapping}. These dimensions provide a
+consistent vocabulary for describing the type of moral concern a model assigns
+to an image. In this study, the five pairs are represented by ten selectable
+categories, together with a \textit{None of these / Not clearly moral in
+nature} option. MFT is used to make model outputs comparable, not to determine
+a universally correct label. This distinction is important because human
+moral judgements can vary across cultural and gender groups
+\cite{qian2024cultural}.
+
+Recent research has begun to evaluate moral judgement in multimodal systems
+using several different task designs. MM-MoralBench uses synthetic
+image--dialogue scenarios to evaluate moral judgement and classification
+\cite{yan2026mmmoralbench}. MORALISE instead examines moral judgement and norm
+attribution in curated real-world image--text data
+\cite{lin2026moralise}. Other studies compare moral narratives produced by
+people and models from similar visual information
+\cite{rezapour2025tales}, or elicit graded judgements grounded in multimodal
+evidence \cite{park2026mmscale}. Taken together, this work shows that
+multimodal moral evaluation is feasible and provides the foundation for
+further comparison of how LVLMs classify morally relevant images.
+
+\section{Problem Statement and Research Gap}
+
+Despite recent progress, evaluating LVLMs in visual moral classification
+remains challenging. Existing evaluations often summarise performance using
+aggregate measures such as accuracy or agreement. Although these measures are
+useful for comparison, they do not show how models behave on individual
+images. In morally ambiguous cases, two models may achieve similar overall
+scores even when they assign different categories to the same images or
+respond differently to changes in visible content.
+
+Previous studies examine multimodal moral judgement using different datasets,
+tasks, taxonomies, and reference judgements
+\cite{yan2026mmmoralbench,lin2026moralise,rezapour2025tales,park2026mmscale}.
+Consequently, it remains unclear how multiple deployed LVLMs compare when they
+classify the same images using the same moral categories. It is also unclear
+how their classifications correspond to the range of participant judgements
+and whether their outputs differ after selected visual information is
+modified. The research gap is therefore the absence of an integrated
+comparison of model classifications, participant responses, and responses to
+selected visual modifications within a common evaluation setting.
+
+To address this gap, this dissertation compares three LVLM configurations on
+a shared image corpus using the same moral-category framework. It examines
+their overall classification patterns, identifies where their classifications agree or
+differ, compares their classifications with participant responses, and
+examines their outputs in selected edited-image cases. The repeatability
+component of RQ2 also checks whether classifications remain stable across repeated
+runs. Together, these analyses reveal differences that a single aggregate
+agreement score would not capture.
+
+\section{Research Aim and Questions}
+
+The aim of this dissertation is to compare how three LVLM configurations
+classify images using a shared moral-category framework. Specifically, the
+study examines their overall classification patterns, their agreement and
+disagreement, the correspondence between model and participant judgements,
+and variation in model outputs across selected original and edited image
+pairs. This aim is addressed through four research questions:
+
+\begin{description}
+
+\item[\textbf{RQ1:}] What classification patterns do GPT-4o, GPT-5.6, and
+Qwen3.6 Flash produce within the fixed 127-image corpus under the visual
+moral-category classification task?
+
+\item[\textbf{RQ2:}] To what extent do the three models agree with one
+another, and how stable are their classifications across repeated runs?
+
+\item[\textbf{RQ3:}] How do participants differ in their moral-category
+selections, and to what extent do their selections correspond to those of
+the three model configurations across the survey images?
+
+\item[\textbf{RQ4:}] What changes in moral-category labels and model-reported
+confidence are observed between selected base images and their edited
+variants?
+
+\end{description}
+
+\section{Scope and Contributions}
+
+This dissertation examines the observable classification behaviour of three
+LVLM configurations: GPT-4o, GPT-5.6, and Qwen3.6 Flash. Each configuration
+applies the same eleven-category moral framework to a fixed corpus of 127
+images and returns a category label, a model-reported confidence score, and a
+brief reason. Because the corpus has no independently validated image-level
+ground truth, the study describes classification patterns and agreement rather
+than measuring accuracy or determining whether one model is morally correct.
+
+Three additional analyses extend the primary model comparison. First, a
+participant study uses 56 completed responses from a fixed 16-image pool to
+compare model-selected categories with participants' multi-label selections.
+Second, an exploratory image-edit analysis compares eleven modified variants
+with their eight base images. Third, the stability component of RQ2 examines
+repeated classifications on a stratified 32-image subset. The additional
+Part~2 survey ratings are reported separately and do not answer the four main
+research questions.
+
+The study makes three main contributions. First, it provides a systematic
+comparison of overall classification patterns, inter-model agreement, and
+output stability under a shared task. The results show that similar aggregate
+rates within this corpus do not necessarily imply image-level agreement on
+individual moral categories.
+Second, it compares model classifications with participant responses while
+preserving variation in participants' multi-label judgements rather than
+treating them as a single correct answer. This distinguishes agreement between
+models from correspondence between models and people. Third, it uses selected
+original and edited image pairs to identify cases in which changes to visible
+content coincide with changes in model labels or model-reported confidence.
+This connects the aggregate comparison with case-level sensitivity to visual
+information.
+
+The scope of these contributions is limited in two main respects. First, the
+fixed image corpus is modest and constructed, its current researcher-coded
+indexing metadata are strongly uneven, and it is not a representative sample.
+Second, the participant study uses a convenience
+sample, while the edited-image and stability analyses use restricted subsets
+of the corpus. The image edits also do not isolate individual visual features
+under fully controlled conditions. The findings should therefore be
+interpreted as descriptive evidence from the evaluated models, participants,
+and images, rather than as population-level model rankings or causal effects
+of particular visual cues.
+
+
+\section{Relevance to the Sustainable Development Goals}
+\label{sec:sdg_relevance}
+
+The study's relevance to the United Nations Sustainable Development Goals
+(SDGs) is methodological. Its primary connection is to
+SDG~16: Peace, Justice and Strong Institutions, particularly Target~16.6 on
+accountable and transparent institutions and Target~16.7 on inclusive and
+representative decision-making~\cite{un2015agenda}. If LVLM outputs are used to inform
+institutional judgements, their treatment of differing moral interpretations
+becomes relevant to accountability and inclusion.
+
+SDG~10: Reduced Inequalities provides a secondary, indirect connection~\cite{un2015agenda}. Reducing
+culturally or socially diverse moral interpretations to one label could
+misrepresent particular people or contexts.
+
+The dissertation does not assess an institutional deployment, measure unequal
+outcomes, or test an SDG indicator. The connection therefore lies in how
+interpretive variation is evaluated; the study does not measure progress
+towards either goal.
+
+
+\section{Dissertation Structure}
+
+Chapter~2 reviews research on moral judgement, visual moral classification,
+multimodal moral evaluation, model stability, cultural variation, and
+subjective disagreement. Chapter~3 describes the image corpus, moral-category
+framework, model inference procedure, participant survey, image-edit study,
+and analytical methods. Chapter~4 presents and interprets the findings in the order of the four
+research questions, followed by the supplementary prompt-robustness check.
+Chapter~5 presents the conclusion, scope and limitations, directions for future
+work, and implications for the Sustainable Development Goals.
