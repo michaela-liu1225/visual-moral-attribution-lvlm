@@ -1,0 +1,40 @@
+{
+  "schema_version": "human-targets-v1",
+  "generated_at_utc": "2026-09-05T22:12:33.918621+00:00",
+  "source_zip_filename": "Model+Survey+for+Moral+Dimension+and+Depth+Assessment_August+31,+2026_11.30.zip",
+  "source_zip_sha256": "187de27b81da3d5e1405b04dbe5538945eacc707aa94e4dbe200d52a7a1374fa",
+  "source_data_retained_or_copied": false,
+  "filter": {
+    "Status": "IP Address",
+    "Finished": "True",
+    "Progress": "100"
+  },
+  "retained_participants": 56,
+  "evaluation_images": 16,
+  "image_participant_responses": 280,
+  "labels": [
+    "Care",
+    "Harm",
+    "Fairness",
+    "Cheating",
+    "Loyalty",
+    "Betrayal",
+    "Respect / Authority",
+    "Subversion",
+    "Sanctity",
+    "Degradation",
+    "None of these / Not clearly moral in nature"
+  ],
+  "multi_label_responses": true,
+  "selection_count_distribution": {
+    "1": 217,
+    "2": 47,
+    "3": 10,
+    "4": 5,
+    "5": 1
+  },
+  "mixed_none_with_moral_responses": 3,
+  "none_label": "None of these / Not clearly moral in nature",
+  "interpretation": "Endorsement rates are overlapping participant selection rates and do not form a single-label probability distribution.",
+  "aggregate_csv_sha256": "9103eb83acac45df6bf3d06af771777077c2f7bfa5fa3706b4694ce12b506c6d"
+}

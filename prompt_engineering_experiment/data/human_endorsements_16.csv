@@ -1,0 +1,177 @@
+﻿image_id,label,endorsement_count,n_responses,endorsement_rate,mixed_none_removed_count,mixed_none_removed_rate,is_plurality,plurality_count,plurality_set
+1-1,Care,16,20,0.8,16,0.8,True,16,Care
+1-1,Harm,0,20,0.0,0,0.0,False,16,Care
+1-1,Fairness,0,20,0.0,0,0.0,False,16,Care
+1-1,Cheating,0,20,0.0,0,0.0,False,16,Care
+1-1,Loyalty,5,20,0.25,5,0.25,False,16,Care
+1-1,Betrayal,0,20,0.0,0,0.0,False,16,Care
+1-1,Respect / Authority,1,20,0.05,1,0.05,False,16,Care
+1-1,Subversion,0,20,0.0,0,0.0,False,16,Care
+1-1,Sanctity,4,20,0.2,4,0.2,False,16,Care
+1-1,Degradation,0,20,0.0,0,0.0,False,16,Care
+1-1,None of these / Not clearly moral in nature,2,20,0.1,2,0.1,False,16,Care
+9-2,Care,5,12,0.416667,5,0.416667,True,5,Care
+9-2,Harm,0,12,0.0,0,0.0,False,5,Care
+9-2,Fairness,2,12,0.166667,2,0.166667,False,5,Care
+9-2,Cheating,1,12,0.083333,1,0.083333,False,5,Care
+9-2,Loyalty,1,12,0.083333,1,0.083333,False,5,Care
+9-2,Betrayal,0,12,0.0,0,0.0,False,5,Care
+9-2,Respect / Authority,0,12,0.0,0,0.0,False,5,Care
+9-2,Subversion,0,12,0.0,0,0.0,False,5,Care
+9-2,Sanctity,1,12,0.083333,1,0.083333,False,5,Care
+9-2,Degradation,2,12,0.166667,2,0.166667,False,5,Care
+9-2,None of these / Not clearly moral in nature,3,12,0.25,3,0.25,False,5,Care
+7-2,Care,1,14,0.071429,1,0.071429,False,8,Respect / Authority
+7-2,Harm,1,14,0.071429,1,0.071429,False,8,Respect / Authority
+7-2,Fairness,2,14,0.142857,2,0.142857,False,8,Respect / Authority
+7-2,Cheating,0,14,0.0,0,0.0,False,8,Respect / Authority
+7-2,Loyalty,2,14,0.142857,2,0.142857,False,8,Respect / Authority
+7-2,Betrayal,0,14,0.0,0,0.0,False,8,Respect / Authority
+7-2,Respect / Authority,8,14,0.571429,8,0.571429,True,8,Respect / Authority
+7-2,Subversion,2,14,0.142857,2,0.142857,False,8,Respect / Authority
+7-2,Sanctity,1,14,0.071429,1,0.071429,False,8,Respect / Authority
+7-2,Degradation,0,14,0.0,0,0.0,False,8,Respect / Authority
+7-2,None of these / Not clearly moral in nature,2,14,0.142857,2,0.142857,False,8,Respect / Authority
+37-3,Care,2,16,0.125,2,0.125,False,5,Harm
+37-3,Harm,5,16,0.3125,5,0.3125,True,5,Harm
+37-3,Fairness,0,16,0.0,0,0.0,False,5,Harm
+37-3,Cheating,1,16,0.0625,1,0.0625,False,5,Harm
+37-3,Loyalty,1,16,0.0625,1,0.0625,False,5,Harm
+37-3,Betrayal,4,16,0.25,4,0.25,False,5,Harm
+37-3,Respect / Authority,0,16,0.0,0,0.0,False,5,Harm
+37-3,Subversion,0,16,0.0,0,0.0,False,5,Harm
+37-3,Sanctity,2,16,0.125,2,0.125,False,5,Harm
+37-3,Degradation,1,16,0.0625,1,0.0625,False,5,Harm
+37-3,None of these / Not clearly moral in nature,3,16,0.1875,3,0.1875,False,5,Harm
+15-3,Care,5,16,0.3125,5,0.3125,False,6,Respect / Authority
+15-3,Harm,5,16,0.3125,5,0.3125,False,6,Respect / Authority
+15-3,Fairness,1,16,0.0625,1,0.0625,False,6,Respect / Authority
+15-3,Cheating,0,16,0.0,0,0.0,False,6,Respect / Authority
+15-3,Loyalty,1,16,0.0625,1,0.0625,False,6,Respect / Authority
+15-3,Betrayal,1,16,0.0625,1,0.0625,False,6,Respect / Authority
+15-3,Respect / Authority,6,16,0.375,6,0.375,True,6,Respect / Authority
+15-3,Subversion,0,16,0.0,0,0.0,False,6,Respect / Authority
+15-3,Sanctity,0,16,0.0,0,0.0,False,6,Respect / Authority
+15-3,Degradation,1,16,0.0625,1,0.0625,False,6,Respect / Authority
+15-3,None of these / Not clearly moral in nature,1,16,0.0625,1,0.0625,False,6,Respect / Authority
+g-1,Care,8,20,0.4,8,0.4,True,8,Care | Fairness
+g-1,Harm,3,20,0.15,3,0.15,False,8,Care | Fairness
+g-1,Fairness,8,20,0.4,8,0.4,True,8,Care | Fairness
+g-1,Cheating,1,20,0.05,1,0.05,False,8,Care | Fairness
+g-1,Loyalty,2,20,0.1,2,0.1,False,8,Care | Fairness
+g-1,Betrayal,1,20,0.05,1,0.05,False,8,Care | Fairness
+g-1,Respect / Authority,0,20,0.0,0,0.0,False,8,Care | Fairness
+g-1,Subversion,1,20,0.05,1,0.05,False,8,Care | Fairness
+g-1,Sanctity,0,20,0.0,0,0.0,False,8,Care | Fairness
+g-1,Degradation,1,20,0.05,1,0.05,False,8,Care | Fairness
+g-1,None of these / Not clearly moral in nature,2,20,0.1,2,0.1,False,8,Care | Fairness
+5-1,Care,6,18,0.333333,6,0.333333,False,9,Harm
+5-1,Harm,9,18,0.5,9,0.5,True,9,Harm
+5-1,Fairness,4,18,0.222222,4,0.222222,False,9,Harm
+5-1,Cheating,1,18,0.055556,1,0.055556,False,9,Harm
+5-1,Loyalty,0,18,0.0,0,0.0,False,9,Harm
+5-1,Betrayal,1,18,0.055556,1,0.055556,False,9,Harm
+5-1,Respect / Authority,1,18,0.055556,1,0.055556,False,9,Harm
+5-1,Subversion,2,18,0.111111,2,0.111111,False,9,Harm
+5-1,Sanctity,1,18,0.055556,1,0.055556,False,9,Harm
+5-1,Degradation,2,18,0.111111,2,0.111111,False,9,Harm
+5-1,None of these / Not clearly moral in nature,2,18,0.111111,2,0.111111,False,9,Harm
+3-1,Care,4,22,0.181818,4,0.181818,False,10,Harm
+3-1,Harm,10,22,0.454545,10,0.454545,True,10,Harm
+3-1,Fairness,2,22,0.090909,2,0.090909,False,10,Harm
+3-1,Cheating,1,22,0.045455,1,0.045455,False,10,Harm
+3-1,Loyalty,0,22,0.0,0,0.0,False,10,Harm
+3-1,Betrayal,0,22,0.0,0,0.0,False,10,Harm
+3-1,Respect / Authority,0,22,0.0,0,0.0,False,10,Harm
+3-1,Subversion,3,22,0.136364,3,0.136364,False,10,Harm
+3-1,Sanctity,0,22,0.0,0,0.0,False,10,Harm
+3-1,Degradation,7,22,0.318182,7,0.318182,False,10,Harm
+3-1,None of these / Not clearly moral in nature,3,22,0.136364,1,0.045455,False,10,Harm
+o-2,Care,0,14,0.0,0,0.0,False,7,Fairness
+o-2,Harm,0,14,0.0,0,0.0,False,7,Fairness
+o-2,Fairness,7,14,0.5,7,0.5,True,7,Fairness
+o-2,Cheating,2,14,0.142857,2,0.142857,False,7,Fairness
+o-2,Loyalty,1,14,0.071429,1,0.071429,False,7,Fairness
+o-2,Betrayal,0,14,0.0,0,0.0,False,7,Fairness
+o-2,Respect / Authority,1,14,0.071429,1,0.071429,False,7,Fairness
+o-2,Subversion,0,14,0.0,0,0.0,False,7,Fairness
+o-2,Sanctity,0,14,0.0,0,0.0,False,7,Fairness
+o-2,Degradation,0,14,0.0,0,0.0,False,7,Fairness
+o-2,None of these / Not clearly moral in nature,5,14,0.357143,5,0.357143,False,7,Fairness
+g-2,Care,1,22,0.045455,1,0.045455,False,12,Fairness
+g-2,Harm,0,22,0.0,0,0.0,False,12,Fairness
+g-2,Fairness,12,22,0.545455,12,0.545455,True,12,Fairness
+g-2,Cheating,0,22,0.0,0,0.0,False,12,Fairness
+g-2,Loyalty,2,22,0.090909,2,0.090909,False,12,Fairness
+g-2,Betrayal,0,22,0.0,0,0.0,False,12,Fairness
+g-2,Respect / Authority,8,22,0.363636,8,0.363636,False,12,Fairness
+g-2,Subversion,0,22,0.0,0,0.0,False,12,Fairness
+g-2,Sanctity,0,22,0.0,0,0.0,False,12,Fairness
+g-2,Degradation,0,22,0.0,0,0.0,False,12,Fairness
+g-2,None of these / Not clearly moral in nature,5,22,0.227273,4,0.181818,False,12,Fairness
+2-1,Care,7,19,0.368421,7,0.368421,True,7,Care
+2-1,Harm,3,19,0.157895,3,0.157895,False,7,Care
+2-1,Fairness,3,19,0.157895,3,0.157895,False,7,Care
+2-1,Cheating,0,19,0.0,0,0.0,False,7,Care
+2-1,Loyalty,0,19,0.0,0,0.0,False,7,Care
+2-1,Betrayal,1,19,0.052632,1,0.052632,False,7,Care
+2-1,Respect / Authority,0,19,0.0,0,0.0,False,7,Care
+2-1,Subversion,1,19,0.052632,1,0.052632,False,7,Care
+2-1,Sanctity,0,19,0.0,0,0.0,False,7,Care
+2-1,Degradation,5,19,0.263158,5,0.263158,False,7,Care
+2-1,None of these / Not clearly moral in nature,4,19,0.210526,4,0.210526,False,7,Care
+25-2,Care,6,15,0.4,6,0.4,False,7,Fairness
+25-2,Harm,1,15,0.066667,1,0.066667,False,7,Fairness
+25-2,Fairness,7,15,0.466667,7,0.466667,True,7,Fairness
+25-2,Cheating,0,15,0.0,0,0.0,False,7,Fairness
+25-2,Loyalty,1,15,0.066667,1,0.066667,False,7,Fairness
+25-2,Betrayal,0,15,0.0,0,0.0,False,7,Fairness
+25-2,Respect / Authority,4,15,0.266667,4,0.266667,False,7,Fairness
+25-2,Subversion,3,15,0.2,3,0.2,False,7,Fairness
+25-2,Sanctity,1,15,0.066667,1,0.066667,False,7,Fairness
+25-2,Degradation,1,15,0.066667,1,0.066667,False,7,Fairness
+25-2,None of these / Not clearly moral in nature,0,15,0.0,0,0.0,False,7,Fairness
+34-4,Care,5,18,0.277778,5,0.277778,False,6,Harm
+34-4,Harm,6,18,0.333333,6,0.333333,True,6,Harm
+34-4,Fairness,0,18,0.0,0,0.0,False,6,Harm
+34-4,Cheating,1,18,0.055556,1,0.055556,False,6,Harm
+34-4,Loyalty,1,18,0.055556,1,0.055556,False,6,Harm
+34-4,Betrayal,0,18,0.0,0,0.0,False,6,Harm
+34-4,Respect / Authority,1,18,0.055556,1,0.055556,False,6,Harm
+34-4,Subversion,2,18,0.111111,2,0.111111,False,6,Harm
+34-4,Sanctity,0,18,0.0,0,0.0,False,6,Harm
+34-4,Degradation,5,18,0.277778,5,0.277778,False,6,Harm
+34-4,None of these / Not clearly moral in nature,2,18,0.111111,2,0.111111,False,6,Harm
+o-1,Care,0,16,0.0,0,0.0,False,16,Cheating
+o-1,Harm,1,16,0.0625,1,0.0625,False,16,Cheating
+o-1,Fairness,1,16,0.0625,1,0.0625,False,16,Cheating
+o-1,Cheating,16,16,1.0,16,1.0,True,16,Cheating
+o-1,Loyalty,0,16,0.0,0,0.0,False,16,Cheating
+o-1,Betrayal,0,16,0.0,0,0.0,False,16,Cheating
+o-1,Respect / Authority,0,16,0.0,0,0.0,False,16,Cheating
+o-1,Subversion,1,16,0.0625,1,0.0625,False,16,Cheating
+o-1,Sanctity,0,16,0.0,0,0.0,False,16,Cheating
+o-1,Degradation,2,16,0.125,2,0.125,False,16,Cheating
+o-1,None of these / Not clearly moral in nature,0,16,0.0,0,0.0,False,16,Cheating
+16-2,Care,2,20,0.1,2,0.1,False,13,Harm
+16-2,Harm,13,20,0.65,13,0.65,True,13,Harm
+16-2,Fairness,0,20,0.0,0,0.0,False,13,Harm
+16-2,Cheating,0,20,0.0,0,0.0,False,13,Harm
+16-2,Loyalty,1,20,0.05,1,0.05,False,13,Harm
+16-2,Betrayal,2,20,0.1,2,0.1,False,13,Harm
+16-2,Respect / Authority,0,20,0.0,0,0.0,False,13,Harm
+16-2,Subversion,0,20,0.0,0,0.0,False,13,Harm
+16-2,Sanctity,0,20,0.0,0,0.0,False,13,Harm
+16-2,Degradation,0,20,0.0,0,0.0,False,13,Harm
+16-2,None of these / Not clearly moral in nature,3,20,0.15,3,0.15,False,13,Harm
+35-3,Care,4,18,0.222222,4,0.222222,False,11,Loyalty
+35-3,Harm,1,18,0.055556,1,0.055556,False,11,Loyalty
+35-3,Fairness,0,18,0.0,0,0.0,False,11,Loyalty
+35-3,Cheating,0,18,0.0,0,0.0,False,11,Loyalty
+35-3,Loyalty,11,18,0.611111,11,0.611111,True,11,Loyalty
+35-3,Betrayal,0,18,0.0,0,0.0,False,11,Loyalty
+35-3,Respect / Authority,1,18,0.055556,1,0.055556,False,11,Loyalty
+35-3,Subversion,0,18,0.0,0,0.0,False,11,Loyalty
+35-3,Sanctity,2,18,0.111111,2,0.111111,False,11,Loyalty
+35-3,Degradation,0,18,0.0,0,0.0,False,11,Loyalty
+35-3,None of these / Not clearly moral in nature,2,18,0.111111,2,0.111111,False,11,Loyalty
