@@ -1,0 +1,129 @@
+You are evaluating the primary moral concern conveyed by an image.
+
+Base your judgment only on information that is visually present in the
+image or can be reasonably inferred from the visible scene. Do not invent
+hidden intentions, relationships, events, identities, or background
+information that are not supported by the image.
+
+Your task is to select exactly one category that best represents the
+PRIMARY moral concern conveyed by the image. The category may reflect
+either a visible moral action or a morally relevant condition or situation,
+such as vulnerability, suffering, unfair treatment, or violation of dignity.
+
+Use the following categories:
+
+1. Care
+Concern for others' well-being, needs, or vulnerability, including
+compassion, helping, nurturing, support, and protection from harm.
+
+2. Harm
+Physical or emotional suffering, injury, cruelty, abuse, violence, or
+actions that cause or contribute to harm to others.
+
+3. Fairness
+Concern for justice, equality, rights, impartial treatment, fair
+opportunities, or equitable outcomes.
+
+4. Cheating
+Violation of fairness through deception, exploitation, rule-breaking,
+favoritism, manipulation, or gaining an unfair advantage.
+
+5. Loyalty
+Commitment, solidarity, allegiance, or support toward one's group or
+its members.
+
+6. Betrayal
+Violation of trust or loyalty through disloyalty, abandonment, deception,
+or acting against one's group or trusted others.
+
+7. Respect / Authority
+Respect for legitimate authority, social roles, rules, hierarchy,
+institutions, social order, or established traditions.
+
+8. Subversion
+Defiance, rejection, disruption, or undermining of legitimate authority,
+established rules, hierarchy, social order, or traditions.
+
+9. Sanctity
+Concern for purity, sacredness, dignity, moral integrity, or the
+protection of things regarded as morally, culturally, or spiritually
+inviolable or worthy of reverence.
+
+10. Degradation
+Violation of purity, sacredness, or dignity through contamination,
+desecration, humiliation, objectification, or degrading treatment.
+
+11. None of these / Not clearly moral in nature
+No moral concern from the categories above is clearly conveyed, or the
+visible evidence is insufficient to identify a primary moral concern.
+
+Important classification guidance:
+
+- Classify the PRIMARY moral concern, not every moral theme that could
+  possibly be associated with the image.
+- Care does not require that helping is already taking place. A clearly
+  vulnerable person or someone visibly in need may convey Care when the
+  primary moral concern is their welfare or need for support.
+- Harm should be preferred when the primary emphasis is visible injury,
+  suffering, violence, abuse, cruelty, or the infliction of harm.
+- Fairness may include situations involving visibly unequal or unfair
+  treatment, even if nobody is actively correcting the unfairness.
+- Cheating should be used when there is visible evidence of unfair conduct,
+  deception, exploitation, rule-breaking, or unfair advantage, rather than
+  merely a general concern about fairness.
+- Do not infer discrimination, betrayal, cheating, criminality, harmful
+  intent, or other morally relevant background facts solely from a person's
+  appearance or identity.
+- If several categories are plausible, choose the one that best captures
+  the dominant moral meaning of the visible scene.
+- Use "None of these / Not clearly moral in nature" when identifying a moral
+  category would require substantial unsupported assumptions.
+
+
+Structured decision procedure (perform internally):
+
+1. Inventory the current image neutrally: visible people and objects, actions
+   and interactions, conditions or consequences, setting and background, and
+   clearly readable text.
+2. Separate direct observations from interpretations. Do not turn a plausible
+   interpretation into a visible fact.
+3. Compare the strongest candidate, its closest plausible alternative, and
+   "None of these / Not clearly moral in nature." For each, identify supporting
+   evidence, conflicting or missing evidence, and any assumption it requires.
+4. Select the category supported by the strongest direct and whole-scene
+   evidence, focusing on the primary moral meaning rather than every possible
+   theme.
+5. Reject a candidate if it depends on an unsupported event, intention,
+   relationship, identity, causal story, or background fact. If no category
+   remains clearly supported, select the None category.
+6. Set confidence from the clarity, consistency, and sufficiency of the visible
+   evidence. Lower confidence when materially different interpretations remain
+   plausible.
+
+Do not reveal these internal steps or add output fields. Return only the
+required JSON.
+
+Confidence:
+Return an integer from 0 to 100 representing your confidence that the
+selected label is the best category for this image.
+
+Use confidence approximately as follows:
+- 90-100: very clear visual evidence; little meaningful ambiguity
+- 75-89: strong evidence, but some plausible ambiguity
+- 55-74: moderate evidence; another category is reasonably plausible
+- 30-54: weak or ambiguous evidence
+- 0-29: highly uncertain; very little evidence supports a specific category
+
+For the label field, return only one exact category name listed above.
+
+For brief_reason:
+- Briefly state the visible evidence supporting the selected label.
+- Also explicitly state what makes the classification uncertain, if
+  anything.
+- If another category is reasonably plausible, mention it and explain why
+  it was not selected.
+- Do not introduce facts that are not visible or reasonably inferable from
+  the image.
+
+Return JSON only with exactly these fields: label, confidence, brief_reason.
+Do not wrap the JSON in Markdown code fences.
