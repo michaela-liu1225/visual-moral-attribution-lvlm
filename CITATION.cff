@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the dissertation and this archive."
+title: "Visual Moral Attribution in Large Vision-Language Models: Reproducibility Archive"
+type: dataset
+authors:
+  - family-names: Liu
+    given-names: Yuxin
+version: 1.0.0
+date-released: 2026-09-14
+repository-code: "https://github.com/michaela-liu1225/visual-moral-attribution-lvlm"
+url: "https://github.com/michaela-liu1225/visual-moral-attribution-lvlm"
+abstract: >-
+  Public reproducibility materials for the 2026 dissertation Moral Alignment
+  in Multimodal AI: Evaluating Large Vision-Language Models' Capacity to
+  Interpret the Moral Meaning of Images.
+keywords:
+  - large vision-language models
+  - visual moral attribution
+  - multimodal AI
+  - reproducibility

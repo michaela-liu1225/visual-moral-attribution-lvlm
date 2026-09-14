@@ -1,0 +1,33 @@
+image_id,filename,selection_stratum,selection_seed,gpt4o_baseline_label,gpt56_baseline_label,qwen36_baseline_label
+2-1,2-1.jpg,unanimous_exact_moral,20260901,Care,Care,Care
+15-3,15-3.jpg,unanimous_exact_moral,20260901,Care,Care,Care
+31-1,31-1.jpg,unanimous_exact_moral,20260901,Harm,Harm,Harm
+32-2,32-2.jpg,unanimous_exact_moral,20260901,Harm,Harm,Harm
+35-2,35-2.jpg,unanimous_exact_moral,20260901,Loyalty,Loyalty,Loyalty
+36-3,36-3.jpg,unanimous_exact_moral,20260901,Care,Care,Care
+40-1,40-1.jpg,unanimous_exact_moral,20260901,Degradation,Degradation,Degradation
+g-3,g-3.png,unanimous_exact_moral,20260901,Fairness,Fairness,Fairness
+10-1,10-1.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+13-2,13-2.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+26-1,26-1.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+27-2,27-2.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+29-1,29-1.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+30-1,30-1.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+33-3,33-3.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+40-2,40-2.jpg,unanimous_exact_none,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+14-1,14-1.jpg,all_moral_label_disagreement,20260901,Harm,Degradation,Harm
+15-4,15-4.jpg,all_moral_label_disagreement,20260901,Respect / Authority,Care,Care
+17-2,17-2.jpg,all_moral_label_disagreement,20260901,Respect / Authority,Respect / Authority,Care
+17-3,17-3.jpg,all_moral_label_disagreement,20260901,Care,Respect / Authority,Care
+18-1,18-1.jpg,all_moral_label_disagreement,20260901,Loyalty,Loyalty,Care
+28-1,28-1.jpg,all_moral_label_disagreement,20260901,Care,Care,Harm
+31-2,31-2.jpg,all_moral_label_disagreement,20260901,Degradation,Care,Degradation
+o-3,o-3.png,all_moral_label_disagreement,20260901,Degradation,Harm,Harm
+4-3,4-3.jpg,moral_none_disagreement,20260901,Respect / Authority,None of these / Not clearly moral in nature,Respect / Authority
+6-3,6-3.jpg,moral_none_disagreement,20260901,Sanctity,Sanctity,None of these / Not clearly moral in nature
+7-1,7-1.jpg,moral_none_disagreement,20260901,Respect / Authority,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
+13-3,13-3.jpg,moral_none_disagreement,20260901,Cheating,None of these / Not clearly moral in nature,Cheating
+25-1,25-1.jpg,moral_none_disagreement,20260901,Loyalty,None of these / Not clearly moral in nature,Loyalty
+29-2,29-2.jpg,moral_none_disagreement,20260901,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature,Harm
+35-4,35-4.jpg,moral_none_disagreement,20260901,None of these / Not clearly moral in nature,Loyalty,Loyalty
+40-4,40-4.jpg,moral_none_disagreement,20260901,Degradation,None of these / Not clearly moral in nature,None of these / Not clearly moral in nature
